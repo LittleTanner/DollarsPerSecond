@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DollarsPerSecond" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZk-i2-Hbk">
+                                <rect key="frame" x="187" y="385" width="40" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.19112274232177739" green="0.73272921954314718" blue="0.17598136432663597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BV-Dl-9G1">
+                                <rect key="frame" x="62" y="92" width="290" height="90"/>
+                                <string key="text">Enter an annual salary below to calculate your value after taxes. (Based on california tax brackets who are single filers with the typical 40 work hour week with 2 weeks vacation and 9 US holidays)</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ns1-8R-AYF">
+                                <rect key="frame" x="103.5" y="272" width="207" height="45"/>
+                                <color key="backgroundColor" red="0.9656217737849524" green="1" blue="0.9905824485842869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateDollarsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0KN-MD-6ag"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Anually Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IIR-zK-2Yj">
+                                <rect key="frame" x="103.5" y="217.5" width="207" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollars Per Second" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5av-dJ-AaC">
+                                <rect key="frame" x="83" y="356.5" width="248" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollars Per Minute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N1-7a-en5">
+                                <rect key="frame" x="83" y="429.5" width="248" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efL-zL-rfw">
+                                <rect key="frame" x="187" y="459.5" width="40" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.19112274232177739" green="0.73272921954314718" blue="0.17598136432663597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollars Per Hour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgH-Am-XhA">
+                                <rect key="frame" x="83" y="505.5" width="248" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8t-bo-HxG">
+                                <rect key="frame" x="187" y="537" width="40" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.19112274232177739" green="0.73272921954314718" blue="0.17598136432663597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollars Per Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5B-gH-CAc">
+                                <rect key="frame" x="83" y="584.5" width="248" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3g-YA-8Va">
+                                <rect key="frame" x="187" y="617.5" width="40" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.19112274232177739" green="0.73272921954314718" blue="0.17598136432663597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollars Per Week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfx-nS-sXu">
+                                <rect key="frame" x="83" y="666.5" width="248" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbJ-lA-eYU">
+                                <rect key="frame" x="187" y="701.5" width="40" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.19112274232177739" green="0.73272921954314718" blue="0.17598136432663597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollars Per Month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCc-2F-O9L">
+                                <rect key="frame" x="83" y="752" width="248" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xH-CB-uZV">
+                                <rect key="frame" x="187" y="788.5" width="40" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.19112274232177739" green="0.73272921954314718" blue="0.17598136432663597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate Your Dollar Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q0-Tm-xr7">
+                                <rect key="frame" x="41.5" y="63.5" width="331" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="textColor" red="0.19112274230000001" green="0.73272921950000003" blue="0.1759813643" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e5B-gH-CAc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="1g7-Qv-3kd"/>
+                            <constraint firstItem="5av-dJ-AaC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="3O0-Fs-iV4"/>
+                            <constraint firstItem="fZk-i2-Hbk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5fi-yY-390"/>
+                            <constraint firstItem="ns1-8R-AYF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="6KZ-Xg-i26"/>
+                            <constraint firstItem="T8t-bo-HxG" firstAttribute="top" secondItem="xgH-Am-XhA" secondAttribute="bottom" multiplier="1.02" id="7s9-fL-I47"/>
+                            <constraint firstItem="efL-zL-rfw" firstAttribute="top" secondItem="6N1-7a-en5" secondAttribute="bottom" multiplier="1.02" id="8bk-sD-LOa"/>
+                            <constraint firstItem="3BV-Dl-9G1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="8h6-4g-Evs"/>
+                            <constraint firstItem="Z3g-YA-8Va" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BFW-Kp-Kjt"/>
+                            <constraint firstItem="3BV-Dl-9G1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="C0K-ui-OWx"/>
+                            <constraint firstItem="Tfx-nS-sXu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="E5N-tz-Muo"/>
+                            <constraint firstItem="ns1-8R-AYF" firstAttribute="top" secondItem="IIR-zK-2Yj" secondAttribute="bottom" multiplier="1.1" id="Emb-vV-a8O"/>
+                            <constraint firstItem="Tfx-nS-sXu" firstAttribute="top" secondItem="Z3g-YA-8Va" secondAttribute="bottom" multiplier="1.02" id="G3r-0A-g2g"/>
+                            <constraint firstItem="FCc-2F-O9L" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="HI9-MI-m5f"/>
+                            <constraint firstItem="fZk-i2-Hbk" firstAttribute="top" secondItem="5av-dJ-AaC" secondAttribute="bottom" multiplier="1.02" id="HMU-db-TSq"/>
+                            <constraint firstItem="Z3g-YA-8Va" firstAttribute="top" secondItem="e5B-gH-CAc" secondAttribute="bottom" multiplier="1.02" id="KwW-Hh-vFq"/>
+                            <constraint firstItem="6N1-7a-en5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="LLk-S9-q54"/>
+                            <constraint firstItem="6N1-7a-en5" firstAttribute="top" secondItem="fZk-i2-Hbk" secondAttribute="bottom" multiplier="1.02" id="N8V-qj-dGk"/>
+                            <constraint firstItem="5xH-CB-uZV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NDF-zc-Vnn"/>
+                            <constraint firstItem="xgH-Am-XhA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="O4l-Vr-8wO"/>
+                            <constraint firstItem="HbJ-lA-eYU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PbN-Ue-J52"/>
+                            <constraint firstItem="6q0-Tm-xr7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QiU-Y9-He7"/>
+                            <constraint firstItem="xgH-Am-XhA" firstAttribute="top" secondItem="efL-zL-rfw" secondAttribute="bottom" multiplier="1.02" id="R7J-u8-dom"/>
+                            <constraint firstItem="IIR-zK-2Yj" firstAttribute="top" secondItem="3BV-Dl-9G1" secondAttribute="bottom" multiplier="1.15" constant="8" symbolic="YES" id="Roq-Ne-onc"/>
+                            <constraint firstItem="FCc-2F-O9L" firstAttribute="top" secondItem="HbJ-lA-eYU" secondAttribute="bottom" multiplier="1.02" id="Sbq-mb-QPE"/>
+                            <constraint firstItem="IIR-zK-2Yj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="ViN-cb-J7G"/>
+                            <constraint firstItem="IIR-zK-2Yj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Y24-uL-xff"/>
+                            <constraint firstItem="e5B-gH-CAc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c4u-Py-ZYZ"/>
+                            <constraint firstItem="6N1-7a-en5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cAe-tP-cEn"/>
+                            <constraint firstItem="e5B-gH-CAc" firstAttribute="top" secondItem="T8t-bo-HxG" secondAttribute="bottom" multiplier="1.02" id="cCF-oU-aiV"/>
+                            <constraint firstItem="xgH-Am-XhA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gOZ-VZ-tHZ"/>
+                            <constraint firstItem="5xH-CB-uZV" firstAttribute="top" secondItem="FCc-2F-O9L" secondAttribute="bottom" multiplier="1.02" id="hlA-gA-eK8"/>
+                            <constraint firstItem="T8t-bo-HxG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="l6s-Ca-NcL"/>
+                            <constraint firstItem="5av-dJ-AaC" firstAttribute="top" secondItem="ns1-8R-AYF" secondAttribute="bottom" multiplier="1.1" constant="8" symbolic="YES" id="lCO-Wa-rEs"/>
+                            <constraint firstItem="ns1-8R-AYF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ms7-Xp-QWJ"/>
+                            <constraint firstItem="Tfx-nS-sXu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qc1-qV-pqR"/>
+                            <constraint firstItem="3BV-Dl-9G1" firstAttribute="top" secondItem="6q0-Tm-xr7" secondAttribute="bottom" multiplier="1.05" id="riJ-b5-Fx6"/>
+                            <constraint firstItem="FCc-2F-O9L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sJM-aj-Wse"/>
+                            <constraint firstItem="ns1-8R-AYF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.05" id="svR-P3-dNW"/>
+                            <constraint firstItem="efL-zL-rfw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uSv-9u-zjs"/>
+                            <constraint firstItem="5av-dJ-AaC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uXE-q2-cfk"/>
+                            <constraint firstItem="ns1-8R-AYF" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.65" id="v2w-5e-9Z1"/>
+                            <constraint firstItem="6q0-Tm-xr7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="vrz-KD-VTJ"/>
+                            <constraint firstItem="HbJ-lA-eYU" firstAttribute="top" secondItem="Tfx-nS-sXu" secondAttribute="bottom" multiplier="1.02" id="yZo-ba-ojD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="annualSalaryTextField" destination="IIR-zK-2Yj" id="8ft-ve-5HD"/>
+                        <outlet property="calculateDollarsPerDayLabel" destination="Z3g-YA-8Va" id="S1h-bh-VnV"/>
+                        <outlet property="calculateDollarsPerHourLabel" destination="T8t-bo-HxG" id="4Y4-k3-9AH"/>
+                        <outlet property="calculateDollarsPerMinuteLabel" destination="efL-zL-rfw" id="kQv-kb-r8R"/>
+                        <outlet property="calculateDollarsPerMonthLabel" destination="5xH-CB-uZV" id="aFX-Je-dpw"/>
+                        <outlet property="calculateDollarsPerWeekLabel" destination="HbJ-lA-eYU" id="QDR-k2-mEK"/>
+                        <outlet property="calculatedDollarsPerSecondLabel" destination="fZk-i2-Hbk" id="TqD-ac-tzc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
